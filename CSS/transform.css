@@ -1,0 +1,57 @@
+.box{
+    height : 100px;
+width: 100px;
+    background-color: blue;
+   
+    font-size: 5vh;
+    margin: 40pt;
+    
+    
+}
+
+#div1{
+transform: skewX(45deg);
+}
+
+#div2{
+transform: skewY(45deg);
+}
+#div3{
+transform: skew(20deg) skewY(20deg);
+}
+#div4{
+transform: skew(20deg,20deg);
+}
+
+#div5{
+transform: rotateX(45deg);
+}
+#div6{
+    transform: rotateY(30deg);
+}
+#div7{
+    transform: rotate(60deg);
+    /* by default it rotates object in z direction  */
+}
+
+/* if we increase widht or height of particular box , then it will not increase or decrease the size of 
+inner elements but when we do scale , it will effect the whole block  */
+#div8{
+transform: scale(2,2);
+}
+#div9{
+    transform: scaleX(2);
+}
+#div10{
+    transform: scaleY(2);
+}
+#div11{
+    height: 150px;
+    width: 150px;
+    transform: translate(45px,10px) rotate(45deg);
+}
+#div12{
+    height: 150px;
+    width: 150px;
+    transform: rotate(45deg) translate(45px,0px);
+}

@@ -1,0 +1,11 @@
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: tomato;
+    /* if i write display: none , then it will hide the element and also not show his position ; */
+    /* display: none; */
+
+
+    /* And if i write visibility: hidden , then it will hide only the element and show his empty space ; */
+    /* visibility: hidden ; */
+} 

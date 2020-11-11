@@ -1,0 +1,33 @@
+.container{
+    display: grid;
+    grid-gap: 1rem;
+
+    /* first we have to define areas of grid  */
+    /* it will made 3 rows and 4 columns in which 1st row contains navbar of 4 columns size , 
+    similarly 2nd row contains 2 columns of aside and 2 columns of section and so on 3rd row  */
+    grid-template-areas: 
+    'navbar navbar navbar navbar'
+    'section section aside aside'
+    'footer footer footer footer'
+    ;
+}
+.item{
+    background-color: violet;
+    border: tomato solid 3px ;
+    padding: 30px;
+}
+
+/* we have to give each area a unique name so that we can define its area in container  */
+#navbar{
+grid-area: navbar;
+}
+#aside{
+    grid-area: aside;
+}
+#section{
+    grid-area: section;
+}
+#footer{
+    grid-area: footer;
+    
+}

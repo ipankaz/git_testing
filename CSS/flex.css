@@ -1,0 +1,67 @@
+.container{
+    background-color: burlywood;
+    height: 400px;  
+    width: 400px;
+    margin: 40px;
+    display: flex;
+    /* flex-wrap: wrap;
+    flex-direction: row; */
+
+    /* short feature for writting flex direction and flex wrap together  */
+
+    flex-flow: row wrap;
+/* how items within a row are aligned in order  */
+    justify-content: center;
+    /* how all the rows are aligned togehter  */
+   align-content: center;
+   /* align items within the row perpendicularly  */
+   align-items: center;
+    text-align: center;
+    
+}
+
+.item{
+    height: 50px;
+    color: white;
+    width: 50px;
+    background-color: darkblue;
+    border: darkred dotted 2px;
+    font-size: 20px;
+    margin: 10px;
+    /* this is used to make our text vertical centered , there is no inbuilt
+     feature to align text vertically center and box size should be equal to the 
+     line height */
+    line-height: 50px;
+
+    
+}
+#box1{
+    /* order is used to specify the order no. of boxes means whose order value is greater , 
+    that box will come later  */
+    /* higher the order , later it shows up in the container  */
+  order: 20;
+  /* whenever we increase the browser width , it will start growing by the factor mentioned , default is 1  */
+  flex-grow: 2;
+  /* whenever we decrease the browser width , it will start shrinking by the factor mentioned , default is 1  */
+  flex-shrink: 2;
+/* when flex direction is set to row , then flex basics changes the width of particular element ,
+ when flex direction is set to column , then it changes the height of particular elemnt  */
+
+  flex-basis: 340px;
+
+  /* flex : grow shrink basics   ------ shortcut   */
+/* it will align the particular item to the start of flex container  */
+
+align-self: flex-start;
+
+}
+#box2{
+  order: 30;  
+  flex-grow: 2;
+  flex-shrink: 2;
+}
+#box3{
+order : 40;
+flex-grow: 2;
+  flex-shrink: 2;
+}

@@ -1,0 +1,18 @@
+/* in root , we declare global variables and can be used in class or id  */
+
+:root{
+    --background-color : silver;
+    --red-border : red ;
+}
+
+.container{
+    display: flex;
+background-color: var(--background-color);
+border: black 3px solid;
+}
+.box{
+margin: 15px;
+padding: 15px;
+
+border: var(--red-border) 2px solid;
+}

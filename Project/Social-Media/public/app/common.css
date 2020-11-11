@@ -1,0 +1,15 @@
+#footer{
+    background-color: var(--light);
+    padding-bottom: 0.5rem;
+    position: sticky;
+    bottom: 0px;
+}
+#content{
+    height: 4000px;
+}
+#navbar{
+    position: sticky;
+    top:-5px;
+    padding-top: 0.5rem;
+    z-index: 1;
+}

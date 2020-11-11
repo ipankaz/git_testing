@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fare</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="./script.js"></script>
+    <style>
+        .container{
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="conatiner">
+        <input type="number" placeholder="Enter your distance ( default km )" id="km">
+        <br>
+        <input type="number" placeholder="Enter your time take ( default minutes )" id="time">
+        <br>
+        <button  id="calcfare">Calculate fare</button>
+        <div id="fare"></div>
+        <button id="getRate">Get Fare Rate List</button>
+        <div id="rateList"></div>
+    </div>
+</body>
+</html>

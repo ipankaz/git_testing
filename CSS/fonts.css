@@ -1,0 +1,16 @@
+#p1{
+font-size: 5vh; 
+/* 1 vh is the 1/100 of the browser window size  */
+}
+#p2{
+font-family: Georgia, 'Times New Roman', Times, serif;
+/* it will change font style to georgia , if georgia is not supported by browser then it will change 
+font style to Times new roman and so on . AT the end if nothing is supported , the default font is sans serif */
+}
+#p3{
+word-spacing: 1vh;
+letter-spacing: 1vh;
+}
+#p4{
+font-style: italic;
+}

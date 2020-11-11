@@ -1,0 +1,26 @@
+div.button {
+    background-color: coral;
+    margin: 50px;
+    padding: 30px;
+    
+    color: cornsilk;
+    width: 100px;
+    font-size: 20px;
+    border-radius: 30px;
+    height: 10px;
+    box-shadow: grey 5px 5px 5px;
+   transition: 0.5s;
+}
+
+div.button:hover{
+transform: translate(-5px ,-5px);
+box-shadow: grey 10px 10px 10px;
+transition: 0.5s;
+
+}
+
+div.button:active{
+transform: translate(5px,5px);
+transition: transform 0.1s , box-shadow 0.5s;
+box-shadow: grey 5px 5px 3px;
+}

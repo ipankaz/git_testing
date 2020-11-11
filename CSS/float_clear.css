@@ -1,0 +1,28 @@
+.container{
+    background-color: mintcream;
+    border: navy 4px solid;
+}
+.item{
+    background-color: #d7efee;
+    color: black;
+    border: cornflowerblue 3px solid;
+    padding: 12px 3px;
+    margin: 12px 3px;
+    border-radius: 10px;
+}
+#fruits{
+    float: right;
+    width: 48%;
+
+}
+#computers{
+    float: left;
+    width: 48%;
+
+}
+#stationary{
+    clear: both;
+    width: 96%;
+    margin: auto;
+    margin-bottom: 7px;
+}

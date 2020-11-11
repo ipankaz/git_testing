@@ -1,0 +1,27 @@
+/* This is the general sibling combinator */
+
+h2~p{
+    font-size: 30pt;
+    font-style: italic;
+    background-color: hotpink;
+}
+
+/* This is the adjacent sibling combinator */
+
+h2+p{
+    color: lawngreen;
+    padding-left: 30pt;
+}
+
+/* this is the child combinator . it will effect direct childs of section  */
+section > p{
+    color: lemonchiffon;
+    background-color: black;
+    font-family: monospace;
+}
+
+/* this is descendant child combinator , it will effect direct or indirect childs of section  */
+section p{
+    color: chartreuse;
+    background-color: darkblue;
+}

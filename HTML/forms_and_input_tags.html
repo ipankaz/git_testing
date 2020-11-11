@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms and input tags</title>
+</head>
+<body>
+    <h2>Thi is HTML form</h2>
+   <form action="backend.php">
+       <!-- label is used so that when we click on the name , it will move our cursor directly into input box
+    We have to make sure that id should be same as for= -->
+       <label for="name">Name</label>
+<div>
+   <input type="text" name ="myName" id ="name">
+</div>
+<br>
+<div>
+    Roll no. : <input min ="100" max ="200" type="number" name="myRollno" id="">
+  </div>
+  <br>
+  <div>
+      <!-- name in every input type is backened file where data is stored -->
+    Class : <input type="text" name = "myClass"> 
+  </div>
+  <br>
+
+  <div>
+    <!-- name in every input type is backened file where data is stored -->
+  Color : <input type="color" name = "myColor"> 
+</div>
+<br>
+  <div>
+      <!-- checked command is used so that by default it is always checked -->
+    Are you Engineer: <input type="checkbox"  checked name="myData" id="">
+  </div>
+  <br>
+
+  <div>
+    DOB : <input type="date" name="myDOB" id="">
+
+  </div>
+  <br>
+  <div>
+    Country : input <select name="myCountry" id="">
+        <option value="ind" >India </option>
+
+        <!-- by default those option is choosed where selected is written -->
+        <option value="usa" selected>America</option>
+        <option value="sing">Singapore</option>
+        <option value="afr">Africa</option>
+    </select>
+  </div>
+  <br>
+  <div>
+    Tell about yourself: input <br><textarea name="myDescription" id="" cols="30" rows="10"></textarea>
+  </div>
+  <br>
+  <div>
+    Gender : Male <input type="radio" name="myGender" id="" > female <input type="radio" name="myGender" id="">
+    Others <input type="radio" name="myGender" id="">
+  </div>
+  <br>
+  <div>
+  Password :  <input type="password" name="myPassword" id="">
+  </div>
+  <br>
+  
+    <input type="reset" value="Reset now">
+  
+  
+  
+   <input type="submit" value="Submit Now">
+  <br>
+
+  
+
+   </form> 
+   
+<!-- it will copy the entered data and submit it to the action path -->
+   <form action="https://www.google.co.in/">
+    <input name = "q">
+    <input type="submit" value="Search">
+</form>
+</body>
+</html>

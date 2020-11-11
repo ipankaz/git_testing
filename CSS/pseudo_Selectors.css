@@ -1,0 +1,23 @@
+.box1 {
+background-color: dodgerblue;
+color: black;
+font-size: 40pt;
+}
+/* when we move our cursor to the box , it will change properties accorting to wriiten below  */
+.box1:hover {
+background-color: chartreuse;
+color: darkblue;
+font-style: italic;
+}
+/* when we click on the box , it will change properties according to wriiten below  */
+.box1:active{
+    font-weight: bold;
+    ;
+    background-size: 100pt;
+}
+/* it is ssepcially used for input elements and will change properties  */
+input:focus {
+    font-size: large;
+    font-weight: bold;
+    font-style: italic;
+}

@@ -1,0 +1,35 @@
+.box{
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    border: black 2px solid;
+}
+#box1{
+    background-color: violet;
+     /* if i write display: none , then it will hide the element and also not show his position ; */
+    /* display: none; */
+
+
+    /* And if i write visibility: hidden , then it will hide only the element and show his empty space ; */
+    /* visibility: hidden ; */
+}
+#box2{
+   background-color: aqua; 
+
+   /* z-index will only work in position - relative ,absolute,sticky,fixed  */
+   /* when two elements are collapsed onto each other then z-index is used  */
+   /* whose z-index value is greater , that element will show up fully and another one will be behind it  */
+   position: relative;
+   top: 40px;
+   z-index: 100;
+}
+#box3{
+    background-color: burlywood;
+    position: relative;
+    top: -7px;
+    z-index: 15;
+
+}
+#box4{
+    background-color: chartreuse;
+}

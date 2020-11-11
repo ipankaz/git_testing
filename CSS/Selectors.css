@@ -1,0 +1,63 @@
+/* this is the type selector */
+
+div{
+    color: greenyellow;
+    
+
+}
+p{
+   color: darkmagenta;
+   
+  
+}
+
+/* this is the universal selector */
+/* it will applied to whole document */
+
+*{
+    font-style: italic;
+}
+
+/* this is the class selector */
+
+.bigfont{
+    font-size: 30pt;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+/* this is the id selector */
+
+#one{
+    padding-left: 10pt;
+}
+#two{
+    padding-left: 30pt;
+}
+
+/* this is the attribute selector */
+
+input[disabled]{
+    height: 100pt;
+}
+input[type="text"]{
+background-color: hotpink;
+}
+ul li:nth-child(2n){
+    font-size: 40px;
+    color: darkgoldenrod;
+}
+ul li:nth-child(odd){
+    font-size: 20px;
+    color: rgb(32, 85, 230);
+}
+
+#list1::before{
+    content: "This is before pseudo selector";
+    
+}
+#list1::after{
+    content: "This is after pseudo selector";
+}

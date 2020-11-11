@@ -1,0 +1,55 @@
+:root{
+    --speed:5;
+    --count:50;
+}
+
+.machine{
+    height: 400px;
+    width: 900px;
+    background-color: chocolate;
+    border: dashed brown 5px ;
+    margin : 150px auto 50px auto;
+    display: flex;
+
+}
+.slot{
+    height: 250px;
+    width: 250px;
+    background-color: cornsilk;
+    border: darkgray solid 3px;
+    margin: 20px;
+    text-align: center;
+    font-size: 100px;
+    line-height: 250px;
+    overflow: hidden;
+}
+.value{
+    
+    display: inline-block;
+    animation-name: slotpin;
+    animation-iteration-count: var(--count);
+    animation-duration: calc(1s/var(--speed));
+    animation-play-state: paused;
+    animation-timing-function: ease-in-out;
+}
+
+#speed{
+    font-size: 40px;
+    display: inline-block;
+    margin: 10px 100px 10px 300px;
+}
+.button{
+    font-size: 30px;
+    padding: 10px;
+    width: 150px;
+    
+}
+
+@keyframes slotpin{
+    1%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(200px);
+    }
+}

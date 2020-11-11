@@ -1,0 +1,49 @@
+.container{
+    display: grid;
+    
+
+    /* it will create 3 columns of size 300 , 400 and last one will occupy rest space  */
+    /* grid-template-columns: 300px 400px auto;  */
+
+    /* grid-template-columns: 300px 300px 300px; */
+
+/* it will create 3 columns , 1fr means it will occupy 1 part of total 6fr , i.e 1/6 and 4fr means 4/6 part */
+    /* grid-template-columns: 1fr 4fr 1fr; */
+
+    /* /* it will create 10 columns of equal sizes  */
+    /* grid-template-columns: repeat(10,auto); */
+
+    /* it will create space btween all columns and rows */
+    grid-gap : 1rem;
+
+    /* it will create space between all rows 
+    grid-row-gap: 1rem; */
+
+
+    /* it will create 1st row of size 300px  */
+    /* grid-template-rows: 300px; */
+
+    /* it will give rest rows a size of 100px */
+    /* grid-auto-rows: 100px; */
+
+    /* Making website resposive , we use autofit and minmax feature for grid  */
+    grid-template-columns: repeat(auto-fit,minmax(100px , 200px));
+}
+.item{
+    padding: 10px 4px;
+    border: springgreen 3px solid ;
+    background-color: thistle;
+}
+
+/* grid spanning  */
+
+.item:first-child{
+
+    /* it will take space from 1st grid column to 4-1 = 3rd grid column  */
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+
+/* its the shorcut for spanning column ans rows , here it will span 3 rows together  */
+    grid-row: 1 / span 3;
+}

@@ -1,0 +1,47 @@
+.container{
+    background-color: turquoise;
+    height: 3555px;
+}
+.box{
+    display: inline-block;
+    background-color: tomato;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    border: black solid 3px ;
+
+    ;
+}
+#box1{
+
+    /* postion relative will move the box from its original position and will leave a gap  */
+   position: relative; 
+  left: 20px;
+  top: 20px;
+
+}
+#box2{
+    /* position absolute will move from its parent element position and will not leave a gap  */
+position: absolute;
+
+top : 260px ;
+
+}
+
+/* position fixed is used for chat windows and will fixed at that position whenever you scroll the
+ browser window  */
+#box3{
+position: fixed;
+right: 0px;
+bottom: 0px;
+}
+
+/* position sticky is used for menu option and will move whenever you scroll the browser   and it will be 
+postioned only in vertical direction*/
+#box4{
+    position: sticky;
+    top : 100px;
+   
+    
+
+}

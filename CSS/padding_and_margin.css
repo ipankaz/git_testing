@@ -1,0 +1,38 @@
+.box{
+    background-color:cyan;
+    margin: 25pt;
+    border:solid black;
+    padding: 20pt;
+    /* padding : top right bottom left */
+    padding : 20px 30px 40px 50px;
+    
+    /* padiing top/bottom right/left */
+    padding  : 20px 30px;
+}
+
+/* margin is used to relocate its position from all 4 sides and child elements's margin take background 
+color from its parent element while padding increases or decreases the size  */
+/* of whole block from all sides */
+#div1{
+    background-color: darkorange;
+}
+#div2{
+    background-color: forestgreen;
+}
+#div3{
+background-color: fuchsia;
+}
+
+p{
+    background-color:lightcyan;
+    border: maroon 3px solid;
+    border-radius: 10px;
+    color: black;
+    width: 200px;
+
+    /* AS WE increase padding out widht of box starts increasing automaticaally , to avoid this 
+    special feature is used i.e box box-sizing: border-box ; */
+    padding: 50px;
+    box-sizing: border-box;
+
+}
