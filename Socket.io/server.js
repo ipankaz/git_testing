@@ -3,6 +3,8 @@ const app = express();
 const http = require('http')
 const socketio = require('socket.io')
 
+const server_port = process.env.PORT || 4000
+
 app.use('/',express.static(__dirname+'/public'))
 
 const server = http.createServer(app)
@@ -63,6 +65,6 @@ io.on('connection',(socket)=>{
     
     
 })
-server.listen('4000',()=>{
+server.listen(server_port,()=>{
     console.log("started on http://localhost:4000");
 })

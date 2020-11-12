@@ -16,6 +16,7 @@
   },
   "devDependencies": {},
   "scripts": {
+    "start": "node server.js",
     "test": "mocha",
     "cover": "nyc --reporter=html --reporter=text mocha"
     
@@ -25,6 +26,10 @@
   "directories": {
     "test": "test"
     
+  },
+  "engines" : {
+"node": "9",
+"npm":"5"
   },
   "description": ""
 }
