@@ -3,12 +3,13 @@ const app = express();
 const http = require('http')
 const socketio = require('socket.io')
 
-const server_port = process.env.PORT || 4000
+
 
 app.use('/',express.static(__dirname+'/public'))
 
 const server = http.createServer(app)
 const io = socketio(server);
+const PORT = process.env.PORT || 4000
 io.on('connection',(socket)=>{
 
     // for a particular user socket.id is created to distinguist between them 
@@ -65,6 +66,6 @@ io.on('connection',(socket)=>{
     
     
 })
-server.listen(server_port,()=>{
+server.listen(PORT,()=>{
     console.log("started on http://localhost:4000");
 })

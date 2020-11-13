@@ -1,4 +1,4 @@
-let socket = io()
+let socket = io();
 
 let SendBtn = $('#SendBtn')
 let InpMsg = $('#InpMsg')
