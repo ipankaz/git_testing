@@ -1,0 +1,11 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.heading{
+    color: blue;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: capitalize;
+}
