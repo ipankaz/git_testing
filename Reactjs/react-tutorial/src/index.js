@@ -172,3 +172,20 @@ return(
 let array  = ['java','js','c++','python','c','ruby','node.js']
 let [top1,top2,top3,top4,top5,top6] = array;
 console.log(top1 + " , " + top2 + " , " +top3 + " , " +top4 + " , " +top5 + " , " +top16);
+
+// Spread operator
+// It is used to basically company of one array or one object to another array or object respectively
+
+let object1 ={
+  name:"pankaj",
+age:21,
+gender:"male",
+
+}
+
+let object2 = {
+  lastname:"arora",
+  ...object1,  // spread operator
+  college:"jcbose"
+  
+}
