@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import React , {useState} from 'react'
+import Listitem from './components/listitem'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+function App(){
+    const [input,setinput] = useState('');
+    const [list,setList] =useState([])
+
+    function inputEvent(event){
+        
+        setinput(event.target.value)
+    }
+   
+    function addItem(){
+        
+        setList((oldArray)=>{
+            return [...oldArray,input]
+        })
+        setinput('')
+    }
+    function deleteItem(id){
+        setList((olditems)=>{
+           return olditems.filter((value,index)=>{
+                return index!==id
+            })
+        })
+    }
+    return(
+<>
+<div>
+    <h1>ToDoList</h1>
+    <br/>
+    <input type="text" placeholder="Add New Item" onChange={inputEvent} value={input}></input>
+    <button onClick={addItem}>+</button>
+    <ol>
+    { list.map((element,index)=>{
+        return <Listitem key={index} id={index} text={element} onSelect={deleteItem}/>
+    })}
+    </ol>
+</div>
+</>
+    )
 }
 
 export default App;

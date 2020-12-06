@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 //Topic 1 : hooks
 // Here, useState is a Hook (we’ll talk about what this means in a moment).
 //We call it inside a function component to add some local state to it. React will preserve
@@ -182,8 +182,39 @@ import React, { useState } from "react";
 
 // Challenge 6 : 
 
+// function App(){
+//   const [num,setNum] = useState(0)
+//   function increaseEvent(){
+//     setNum(num+1)
+//   }
+//   function decreaseEvent(){
+//     if(num>0){
+//       setNum(num-1)
+//     }else{
+//       alert("Negative numbers not allowed")
+//     }
+    
+//   }
+//   return(
+//     <>
+// <h1>{num}</h1>
+// <button onClick={increaseEvent}>Increment</button>
+// <button onClick={decreaseEvent}>Decrement</button>
+// </>
+//   )
+// }
+//export default App;
+
+// Topic 6 : useEffect();
+// It takes a function inside the parameter and runs it after the DOM is rendered...Everytime your DOM renders
+// it will run the function that you have passed
+
+
 function App(){
   const [num,setNum] = useState(0)
+  useEffect(()=>{
+    alert('num is increased or decreased')
+  },[num]) // whenever the num is renders , then useEffect will work otherwise not
   function increaseEvent(){
     setNum(num+1)
   }
